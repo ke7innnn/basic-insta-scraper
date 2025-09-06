@@ -5,10 +5,10 @@ import pandas as pd
 
 driver = webdriver.Chrome()
 
-profiles_toscrape = ["sydney_sweeney","cristiano","ishowspeed","ke7innn"]
+profiles_toscrape = ["sydney_sweeney","cristiano","ishowspeed","ke7innn"] #add the accounts to want to scrape 
 
-USERNAME = "worldisyo7rs"
-PASSWORD = "nivek659"
+USERNAME = "" #add user and pass which is already logined in your webdriver to avoid verification and use alt acc to avoid ban 
+PASSWORD = ""
 
 
 driver.get("https://www.instagram.com/accounts/login/?hl=en")
@@ -74,7 +74,7 @@ except:
         })
 
 df = pd.DataFrame(data)
-df.to_csv("bios.csv",index=False)
+df.to_csv("instadatat.csv",index=False)#add the name of the csv you 
 
 
 driver.quit()
