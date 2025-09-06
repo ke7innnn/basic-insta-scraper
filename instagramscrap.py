@@ -40,7 +40,7 @@ try:
             bio = "No Bio"
         try:
             stats = driver.find_elements("xpath", "//ul//li//span")
-            posts = stats[0].text if len(stats) > 0 else "N/A"
+            posts = stats[0].text if len(stats) > 0 else "N/A"#insts changes html so sometimes its [0,1,2] sometimes [0,2,4]
             followers = stats[1].text if len(stats) > 1 else "N/A"
             following = stats[2].text if len(stats) > 2 else "N/A"
         except:
