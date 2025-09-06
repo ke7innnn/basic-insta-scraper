@@ -51,7 +51,7 @@ try:
             pfp = driver.find_element("xpath","//img[contains(@alt,'profile picture')]")
             pfp_url = pfp.get_attribute("src")
         except:
-            fp_url = "No pfp"
+            pfp_url = "No pfp"
 
         info = {
             "Name": profiles ,
